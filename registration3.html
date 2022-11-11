@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+	</head>
+<body>
+	<h1 class="header">HSCE Registration form</h1>
+    <form action="wellcome.html" class="form1">
+   <div class="container">
+			<label for="image" >Picture</label>
+			<input type="file" class="input">
+			<span></span>
+			<label for="marksheet">HSC mark sheet</label>
+			<input   onchange="validateSize(this)" type="file" class="input" >
+			<span></span>
+			<label for="marksheet">SSC mark sheet</label>
+			<input type="file" class="input" onchange="validateSize(this)" >
+			<span></span>
+			<label for="marksheet">All semesters mark sheet in a single PDF or docs</label>
+			<input type="file" class="input"  onchange="validateSize(this)" >
+			<span></span>
+
+		</div>
+        <input type="submit" class="button">
+    </form>
+	<div class="footer">&copy;www.nettantra.com</div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration1</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+    <script>
+        // function for validation
+        function validate() {
+            // for variable decleration
+            var name = document.getElementById("fname");
+            var lname = document.getElementById("lname");
+            var fathername =document.getElementById("fathername");
+            var mothername =document.getElementById("mothername");
+            var mobile = document.getElementById("mobile");
+            var telnumber =document.getElementById("telnumber");
+
+        //    decleartion
+            if (name.value.trim() == "") {
+                alert("Blank Name");
+                return false;
+            } else if (lname.value.trim() == "") {
+                alert("Blank Last Name");
+                return false;
+            }
+            else if (fathername.value.trim() == "") {
+                alert("Blank Last Father Name");
+                return false;
+            }
+            else if (mothername.value.trim() == "") {
+                alert("Blank Last Father Name");
+                return false;
+            }
+            else if (mobile.value.trim().length < 10) {
+                alert("mobile no should 10 digits");
+                return false;
+            }
+            else if (telnumber.value.trim().length < 10) {
+                alert("Telephone  no should 10 digits");
+                return false;
+            }
+        }
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <h1 class="header">HSCE Registration form</h1>
+
+    <!-- <form name="myForm" class="form1" action="registration2.html" name="myForm" onsubmit="return validateForm()"
+        method="POST"> -->
+        <form onsubmit="return validate()" action="registration2.html"  class="form1" >
+        <div class="container">
+            <label for="name">First Name</label>
+            <input type="text" id="fname" placeholder=" First" class="input2" />
+            <b><span class="formerror"></span></b>
+            <label for="name">Last Name</label>
+            <input id="lname" type="text" placeholder="Last" class="input">
+            <span></span>
+            <label for="DOB">Date Of Birth</label>
+            <input id="DOB" type="date" name="DOB" placeholder="" class="input" required>
+            <span></span>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="email" class="input" required>
+            <span></span>
+            <label for="name">Father's Name</label>
+            <input id="name" type="text" id="fatername" placeholder="Father's Name" class="input"  >
+            <span></span>
+            <label for="name">Mother's Name</label>
+            <input id="name" type="text" name=" " placeholder="Mother's Name" class="input">
+            <span></span>
+            <label for="gender">Gender</label>
+            <div class="radio">
+            <input id="gender" type="radio" name="gender" value="male">male
+            <input id="gender" type="radio" name="gender" value="female">female
+            <input id="gender" type="radio" name="gender" value="other">other
+               </div>
+            <span></span>
+            <label for="nationality">Nationality</label>
+            <input id="nationality" type="text" name="nationality" placeholder="" class="input">
+            <span></span>
+            <label for="Address">Home Address</label>
+            <input id="Address" type="text" name="Address" placeholder="Address" class="input">
+            <input id="Address" type="text" name="Address" placeholder="City" class="inputadd">
+            <input id="Address" type="text" name="Address" placeholder="Country" class="inputadd">
+            <span></span>
+            <label for="number">Telphone-Home</label>
+            <input  type="number" id="telnumber" placeholder="+91##########" class="input">
+            <span></span>
+            <label for="number">Mobile NO</label>
+            <input  type="number" id="mobile"  name="number" placeholder="+91##########" class="input">
+            <input type="submit" class="button" value="Submit">
+        </div>
+    </form>
+<div class="footer">&copy;www.nettantra.com</div>
+</body>
+
+</html>

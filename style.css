@@ -1,0 +1,87 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background: whitesmoke;
+    background-position: center;
+    background-size: cover;
+    font-size: small;
+}
+.header{
+    text-align: center;
+    background-color: rgb(49, 49, 51);
+    color:white ;
+    height: 40px;
+}
+.form1{
+    margin: 97px auto;
+    background-color:rgb(240, 240, 240);
+    border-radius: 10px;
+    width: 50%;
+    padding-bottom: 10px;
+}
+label{
+    display: block;
+    padding: 20px;
+    font-size:17px ;
+}
+.input{
+    width: 92%;
+    padding: 10px;
+    border: 1px solid #797979;
+    margin-left: 20px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+.input2{
+    width: 92%;
+    padding: 10px;
+    border: 1px solid #797979;
+    margin-left: 20px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+.inputadd{
+    width: 92%;
+    padding: 10px;
+    border: 1px solid #797979;
+    margin-left: 20px;
+    font-size: 15px;
+    border-radius: 3px;
+    margin-top: 20px;
+    
+}
+.button{
+    margin: 20px;
+    padding: 8px 20px;
+    width: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background: blue;
+    color: whitesmoke;
+    float: left;
+    font-weight: bold;
+    position: relative;
+    top: 246%;
+    left: 38%;
+}
+
+.radio{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(29, 28, 28);
+    color: white;
+    text-align: center;
+    font-size:30px;
+ }
